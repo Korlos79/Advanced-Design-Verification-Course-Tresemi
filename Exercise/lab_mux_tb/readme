@@ -1,0 +1,25 @@
+This is a testbench designed to verify the design of a two-input mux.
+The design:
+  The design has a circular buffer. Each entry of the buffer can store a 32-bit data and 2-bit channel.
+  When data is written to the buffer, the oldest data is driven out in the four 8-bit out_data in four
+  clocks. 
+  out_data3 = data[31:24]
+  out_data2 = data[23:16]
+  out_data1 = data[15:08]
+  out_data0 = data[07:00]
+  On the fouorth clock, chan is driven into out_chan.
+The testbench:
+  The testbench is based on the UVM architecture. The TB implements the following:
+    - Stimulus generation with randomization
+    - Data checking
+    - Functional coverage capture
+Run simulation:
+  At the base directory, run these commands:
+    - source env.sh
+    - cd sim
+    - make compile_mux
+    - make run test_name=mux_demo_test
+Lab instructions:
+  - There are Todo actions that are to be completed incrementally 
+  - At the end, after all Todo actions havve been completed, the student is to demonstrate that the testbench
+    can be compiled and run successfully. This proves that all Todo actions have been completed as intended.
