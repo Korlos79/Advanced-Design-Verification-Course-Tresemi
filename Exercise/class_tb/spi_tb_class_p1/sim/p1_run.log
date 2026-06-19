@@ -1,0 +1,301 @@
+vsim  -c top -do sim.do +UVM_TESTNAME=spi_demo_test
+Reading pref.tcl
+
+# 2021.2_1
+
+# vsim -c top -do "sim.do" "+UVM_TESTNAME=spi_demo_test" 
+# Start time: 14:44:10 on Nov 12,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.spi_cfg_pkg(fast)
+# Loading work.apb_seq_pkg(fast)
+# Loading work.spi_tlm_pkg(fast)
+# Loading work.apb_if(fast)
+# Loading work.apb_slave_agent_pkg(fast)
+# Loading work.spi_if(fast)
+# Loading work.clk_rst_if(fast)
+# Loading work.spi_slave_agent_pkg(fast)
+# Loading work.spi_agent_pkg(fast)
+# Loading work.apb_agent_pkg(fast)
+# Loading work.spi_env_pkg(fast)
+# Loading work.spi_test_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.spi_top(fast)
+# Loading /home/eda/siemens/questasim/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# do sim.do
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/env/top.sv(52) @ 0: reporter [TOP] Executing initial block
+# UVM_INFO @ 0: reporter [RNTST] Running test spi_demo_test...
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(64) @ 0: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Wait for SPI packet
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/rst_seq.sv(33) @ 1000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@rst_seq [] Sending reset packet 
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(79) @ 301000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] I saw reset assertion
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/rst_seq.sv(36) @ 1301000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@rst_seq [] Received reponse packet
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(156) @ 1301000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] num_chars = 107, num_dwords = 4
+# -------------------------------------
+# Name            Type      Size  Value
+# -------------------------------------
+# spi_cfg         spi_cfg   -     @496 
+#   inject_error  integral  1     'h0  
+#   max_loop      integral  32    'h6  
+#   bit_ass       integral  1     'h1  
+#   bit_ie        integral  1     'h1  
+#   bit_lsb       integral  1     'h1  
+#   bit_txneg     integral  1     'h0  
+#   bit_rxneg     integral  1     'h1  
+#   num_chars     integral  8     'h6b 
+# -------------------------------------
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/spi_demo_seq.sv(37) @ 1301000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Sending packet 
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 1321000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=0 wdata=bbbbbbbb
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 1441000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 1501000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=4 wdata=cccccccc
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 1621000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 1681000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=8 wdata=dddddddd
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 1801000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 1861000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=c wdata=eeeeeeee
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 1981000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 0000000c
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 2041000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=10 wdata=3b6b
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(86) @ 14942000: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Send ref SPI
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(64) @ 14942000: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Wait for SPI packet
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/spi_demo_seq.sv(40) @ 14942000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(120) @ 62221000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000010
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 62281000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 62401000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=0 rdata=dddddddd
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 62401000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 62461000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 62581000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=4 rdata=cccccccc
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 62581000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 62641000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 62761000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=8 rdata=bbbbbbbb
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 62761000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 62821000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 62941000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=c rdata=2aa
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 62941000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 0000000c
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(156) @ 62941000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] num_chars = 65, num_dwords = 3
+# -------------------------------------
+# Name            Type      Size  Value
+# -------------------------------------
+# spi_cfg         spi_cfg   -     @496 
+#   inject_error  integral  1     'h0  
+#   max_loop      integral  32    'h6  
+#   bit_ass       integral  1     'h1  
+#   bit_ie        integral  1     'h1  
+#   bit_lsb       integral  1     'h1  
+#   bit_txneg     integral  1     'h0  
+#   bit_rxneg     integral  1     'h1  
+#   num_chars     integral  8     'h41 
+# -------------------------------------
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/spi_demo_seq.sv(37) @ 62941000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Sending packet 
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 63001000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=0 wdata=bbbbbbbb
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 63121000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 63181000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=4 wdata=cccccccc
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 63301000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 63361000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=8 wdata=dddddddd
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 63481000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 63541000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=c wdata=eeeeeeee
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 63661000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 0000000c
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 63721000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=10 wdata=3b41
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(86) @ 71582000: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Send ref SPI
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(64) @ 71582000: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Wait for SPI packet
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/spi_demo_seq.sv(40) @ 71582000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(120) @ 123901000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000010
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 123961000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 124081000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=0 rdata=dddddddd
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 124081000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 124141000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 124261000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=4 rdata=cccccccc
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 124261000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 124321000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 124441000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=8 rdata=1
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 124441000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(156) @ 124441000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] num_chars = 96, num_dwords = 3
+# -------------------------------------
+# Name            Type      Size  Value
+# -------------------------------------
+# spi_cfg         spi_cfg   -     @496 
+#   inject_error  integral  1     'h0  
+#   max_loop      integral  32    'h6  
+#   bit_ass       integral  1     'h1  
+#   bit_ie        integral  1     'h1  
+#   bit_lsb       integral  1     'h1  
+#   bit_txneg     integral  1     'h0  
+#   bit_rxneg     integral  1     'h1  
+#   num_chars     integral  8     'h60 
+# -------------------------------------
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/spi_demo_seq.sv(37) @ 124441000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Sending packet 
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 124501000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=0 wdata=bbbbbbbb
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 124621000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 124681000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=4 wdata=cccccccc
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 124801000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 124861000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=8 wdata=dddddddd
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 124981000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 125041000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=c wdata=eeeeeeee
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 125161000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 0000000c
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 125221000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=10 wdata=3b60
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(86) @ 136802000: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Send ref SPI
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(64) @ 136802000: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Wait for SPI packet
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/spi_demo_seq.sv(40) @ 136802000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(120) @ 185401000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000010
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 185461000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 185581000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=0 rdata=dddddddd
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 185581000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 185641000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 185761000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=4 rdata=cccccccc
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 185761000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 185821000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 185941000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=8 rdata=bbbbbbbb
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 185941000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(156) @ 185941000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] num_chars = 21, num_dwords = 1
+# -------------------------------------
+# Name            Type      Size  Value
+# -------------------------------------
+# spi_cfg         spi_cfg   -     @496 
+#   inject_error  integral  1     'h0  
+#   max_loop      integral  32    'h6  
+#   bit_ass       integral  1     'h1  
+#   bit_ie        integral  1     'h1  
+#   bit_lsb       integral  1     'h1  
+#   bit_txneg     integral  1     'h0  
+#   bit_rxneg     integral  1     'h1  
+#   num_chars     integral  8     'h15 
+# -------------------------------------
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/spi_demo_seq.sv(37) @ 185941000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Sending packet 
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 186001000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=0 wdata=bbbbbbbb
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 186121000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 186181000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=4 wdata=cccccccc
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 186301000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 186361000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=8 wdata=dddddddd
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 186481000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 186541000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=c wdata=eeeeeeee
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 186661000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 0000000c
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 186721000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=10 wdata=3b15
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(86) @ 189302000: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Send ref SPI
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(64) @ 189302000: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Wait for SPI packet
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/spi_demo_seq.sv(40) @ 189302000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(120) @ 246901000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000010
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 246961000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 247081000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=0 rdata=1ddddd
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 247081000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(156) @ 247081000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] num_chars = 1, num_dwords = 1
+# -------------------------------------
+# Name            Type      Size  Value
+# -------------------------------------
+# spi_cfg         spi_cfg   -     @496 
+#   inject_error  integral  1     'h0  
+#   max_loop      integral  32    'h6  
+#   bit_ass       integral  1     'h1  
+#   bit_ie        integral  1     'h1  
+#   bit_lsb       integral  1     'h1  
+#   bit_txneg     integral  1     'h0  
+#   bit_rxneg     integral  1     'h1  
+#   num_chars     integral  8     'h1  
+# -------------------------------------
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/spi_demo_seq.sv(37) @ 247081000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Sending packet 
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 247141000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=0 wdata=bbbbbbbb
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 247261000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 247321000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=4 wdata=cccccccc
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 247441000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 247501000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=8 wdata=dddddddd
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 247621000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 247681000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=c wdata=eeeeeeee
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 247801000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 0000000c
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 247861000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=10 wdata=3b01
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(86) @ 248042000: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Send ref SPI
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(64) @ 248042000: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Wait for SPI packet
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/spi_demo_seq.sv(40) @ 248042000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(120) @ 308041000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000010
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 308101000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 308221000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=0 rdata=1
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 308221000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(156) @ 308221000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] num_chars = 38, num_dwords = 2
+# -------------------------------------
+# Name            Type      Size  Value
+# -------------------------------------
+# spi_cfg         spi_cfg   -     @496 
+#   inject_error  integral  1     'h0  
+#   max_loop      integral  32    'h6  
+#   bit_ass       integral  1     'h1  
+#   bit_ie        integral  1     'h1  
+#   bit_lsb       integral  1     'h1  
+#   bit_txneg     integral  1     'h0  
+#   bit_rxneg     integral  1     'h1  
+#   num_chars     integral  8     'h26 
+# -------------------------------------
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/spi_demo_seq.sv(37) @ 308221000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Sending packet 
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 308281000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=0 wdata=bbbbbbbb
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 308401000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 308461000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=4 wdata=cccccccc
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 308581000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 308641000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=8 wdata=dddddddd
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 308761000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000008
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 308821000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=c wdata=eeeeeeee
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(43) @ 308941000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 0000000c
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(109) @ 309001000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB write to addr=10 wdata=3b26
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(86) @ 313622000: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Send ref SPI
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_driver.sv(64) @ 313622000: uvm_test_top.spi_env.spi_agent_0.spi_driver [spi_driver] Wait for SPI packet
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/spi_demo_seq.sv(40) @ 313622000: uvm_test_top.spi_env.spi_agent_0.spi_sequencer@@spi_demo_seq [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(120) @ 369181000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000010
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 369241000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 369361000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=0 rdata=dddddddd
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 369361000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000000
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(137) @ 369421000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] Executing apb_read
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_driver.sv(150) @ 369541000: uvm_test_top.spi_env.apb_agent_0.apb_driver [apb_driver] APB Read addr=4 rdata=c
+# UVM_INFO /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_demo_seq.sv(140) @ 369541000: uvm_test_top.spi_env.apb_agent_0.apb_sequencer@@apb_demo_seq_name [] Received reponse packet 00000004
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 369541010: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  141
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# []    64
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [TOP]     1
+# [apb_driver]    59
+# [spi_driver]    13
+# ** Note: $finish    : /home/eda/siemens/questasim/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 369541010 ps  Iteration: 53  Instance: /top
+# End time: 14:44:12 on Nov 12,2025, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

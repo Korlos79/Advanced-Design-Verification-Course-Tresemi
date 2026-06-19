@@ -1,0 +1,32 @@
+//
+// The following are instructions on how to run simulation for the SPI phase
+// 1 TB and how to bring up waveforms to verify that the TB achieves its
+// objective of forcing the parallel to serial transfers.
+//
+make compile_spi
+vsim top -voptargs=+acc +UVM_TESTNAME=spi_demo_test
+// The above command brings up the Questa GUI
+// You may need to maximize the vsim window
+// In the transcript window type the following
+log -r /*
+run -a
+// A popup window asks you to select Yes or No: select No
+// In the sim window, identify the top instance, then click the dut instance
+// under top.
+// In the objects window, click on signal PCLK
+// Scroll down in the objects window until you see signal miso_pad_i
+// Hold down the Shift key and click on miso_paf_i
+// This action selects (highlight) the PCLK signal all the way down to
+// misl_pad_i
+// Right click on the mouse and select Add Wave (or Ctl-W)
+// You should see signal mosi_pad_o toggling while sclk_pad_o is active
+// This indicates your transfers occured and your TB performed what it was
+// designed to do
+//
+// Additional key strokes
+// h : toggle on and off the signal paths
+// f : full view (zoom out)
+// l : last view
+// Middle-click the mouse and drag to zoom in
+//
+

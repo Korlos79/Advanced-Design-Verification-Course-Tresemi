@@ -1,0 +1,225 @@
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env /home/tresemi/member/src/spi_tb_r1_p1/inf/clk_rst_if.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:10 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env" /home/tresemi/member/src/spi_tb_r1_p1/inf/clk_rst_if.sv 
+-- Compiling interface clk_rst_if
+
+Top level modules:
+	--none--
+End time: 14:43:10 on Nov 12,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env /home/tresemi/member/src/spi_tb_r1_p1/inf/apb_if.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:10 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env" /home/tresemi/member/src/spi_tb_r1_p1/inf/apb_if.sv 
+-- Compiling interface apb_if
+
+Top level modules:
+	--none--
+End time: 14:43:11 on Nov 12,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env /home/tresemi/member/src/spi_tb_r1_p1/inf/spi_if.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:11 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env" /home/tresemi/member/src/spi_tb_r1_p1/inf/spi_if.sv 
+-- Compiling interface spi_if
+
+Top level modules:
+	--none--
+End time: 14:43:11 on Nov 12,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/dut /home/tresemi/member/src/spi_tb_r1_p1/dut/*.v
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:11 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/dut" /home/tresemi/member/src/spi_tb_r1_p1/dut/spi_clgen.v /home/tresemi/member/src/spi_tb_r1_p1/dut/spi_defines.v /home/tresemi/member/src/spi_tb_r1_p1/dut/spi_shift.v /home/tresemi/member/src/spi_tb_r1_p1/dut/spi_top.v /home/tresemi/member/src/spi_tb_r1_p1/dut/timescale.v 
+-- Compiling module spi_clgen
+-- Compiling module spi_shift
+-- Compiling module spi_top
+
+Top level modules:
+	spi_top
+End time: 14:43:11 on Nov 12,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/tlm +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env /home/tresemi/member/src/spi_tb_r1_p1/tb/tlm/spi_tlm_pkg.svh
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:11 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/tlm" "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env" /home/tresemi/member/src/spi_tb_r1_p1/tb/tlm/spi_tlm_pkg.svh 
+-- Compiling package spi_tlm_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) /home/tresemi/member/src/spi_tb_r1_p1/tb/tlm/spi_tlm_pkg.svh(10): Using implicit +incdir+/home/eda/siemens/questasim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 14:43:11 on Nov 12,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/cfg /home/tresemi/member/src/spi_tb_r1_p1/tb/cfg/spi_cfg_pkg.svh
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:11 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/cfg" /home/tresemi/member/src/spi_tb_r1_p1/tb/cfg/spi_cfg_pkg.svh 
+-- Compiling package spi_cfg_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) /home/tresemi/member/src/spi_tb_r1_p1/tb/cfg/spi_cfg_pkg.svh(10): Using implicit +incdir+/home/eda/siemens/questasim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 14:43:11 on Nov 12,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_seq_pkg.svh
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:11 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq" "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env" /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_seq_pkg.svh 
+-- Compiling package apb_seq_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package spi_cfg_pkg
+** Note: (vlog-2286) /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/seq/apb_seq_pkg.svh(11): Using implicit +incdir+/home/eda/siemens/questasim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 14:43:12 on Nov 12,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_agent_pkg.svh
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:12 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master" "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env" /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_agent_pkg.svh 
+-- Compiling package apb_agent_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package spi_cfg_pkg
+** Note: (vlog-2286) /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/apb_agent_pkg.svh(11): Using implicit +incdir+/home/eda/siemens/questasim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 14:43:12 on Nov 12,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/agt/slave +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/slave/apb_slave_agent_pkg.svh
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:12 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/agt/slave" "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env" /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/slave/apb_slave_agent_pkg.svh 
+-- Compiling package apb_slave_agent_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package spi_cfg_pkg
+** Note: (vlog-2286) /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/slave/apb_slave_agent_pkg.svh(11): Using implicit +incdir+/home/eda/siemens/questasim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 14:43:13 on Nov 12,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_agent_pkg.svh
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:13 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master" "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env" /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_agent_pkg.svh 
+-- Compiling package spi_agent_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package spi_cfg_pkg
+** Note: (vlog-2286) /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/master/spi_agent_pkg.svh(11): Using implicit +incdir+/home/eda/siemens/questasim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 14:43:13 on Nov 12,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/agt/slave +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/slave/spi_slave_agent_pkg.svh
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:13 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/agt/slave" "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env" /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/slave/spi_slave_agent_pkg.svh 
+-- Compiling package spi_slave_agent_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package spi_cfg_pkg
+** Note: (vlog-2286) /home/tresemi/member/src/spi_tb_r1_p1/tb/agt/slave/spi_slave_agent_pkg.svh(11): Using implicit +incdir+/home/eda/siemens/questasim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 14:43:14 on Nov 12,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env /home/tresemi/member/src/spi_tb_r1_p1/tb/env/spi_env_pkg.svh
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:14 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env" /home/tresemi/member/src/spi_tb_r1_p1/tb/env/spi_env_pkg.svh 
+-- Compiling package spi_env_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package apb_agent_pkg
+-- Importing package spi_cfg_pkg
+-- Importing package spi_agent_pkg
+-- Importing package spi_slave_agent_pkg
+-- Importing package apb_slave_agent_pkg
+** Note: (vlog-2286) /home/tresemi/member/src/spi_tb_r1_p1/tb/env/spi_env_pkg.svh(14): Using implicit +incdir+/home/eda/siemens/questasim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 14:43:14 on Nov 12,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vlog  +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env +incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/tst /home/tresemi/member/src/spi_tb_r1_p1/tb/tst/spi_test_pkg.svh
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:14 on Nov 12,2025
+vlog "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/env" "+incdir+/home/tresemi/member/src/spi_tb_r1_p1/tb/tst" /home/tresemi/member/src/spi_tb_r1_p1/tb/tst/spi_test_pkg.svh 
+-- Compiling package spi_test_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package spi_env_pkg
+-- Importing package apb_agent_pkg
+-- Importing package spi_cfg_pkg
+-- Importing package spi_agent_pkg
+-- Importing package spi_slave_agent_pkg
+-- Importing package apb_slave_agent_pkg
+-- Importing package spi_tlm_pkg
+-- Importing package apb_seq_pkg
+** Note: (vlog-2286) /home/tresemi/member/src/spi_tb_r1_p1/tb/tst/spi_test_pkg.svh(18): Using implicit +incdir+/home/eda/siemens/questasim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+End time: 14:43:14 on Nov 12,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vlog  -sv /home/tresemi/member/src/spi_tb_r1_p1/tb/env/top.sv
+QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:14 on Nov 12,2025
+vlog -sv /home/tresemi/member/src/spi_tb_r1_p1/tb/env/top.sv 
+** Note: (vlog-2286) /home/tresemi/member/src/spi_tb_r1_p1/tb/env/top.sv(11): Using implicit +incdir+/home/eda/siemens/questasim/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package top_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling module top
+-- Importing package spi_test_pkg
+-- Importing package spi_env_pkg
+-- Importing package apb_agent_pkg
+-- Importing package spi_cfg_pkg
+-- Importing package spi_agent_pkg
+-- Importing package spi_slave_agent_pkg
+-- Importing package apb_slave_agent_pkg
+-- Importing package spi_tlm_pkg
+-- Importing package apb_seq_pkg
+
+Top level modules:
+	top
+End time: 14:43:15 on Nov 12,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+vopt +acc top -o vopt_top +designfile
+QuestaSim-64 vopt 2021.2_1 Compiler 2021.05 May 15 2021
+Start time: 14:43:15 on Nov 12,2025
+vopt "+acc" top -o vopt_top "+designfile" 
+
+Top level modules:
+	top
+
+Analyzing design...
+-- Loading module top
+-- Importing package spi_test_pkg
+-- Importing package spi_env_pkg
+-- Importing package apb_agent_pkg
+-- Importing package spi_cfg_pkg
+-- Importing package spi_agent_pkg
+-- Importing package spi_slave_agent_pkg
+-- Importing package apb_slave_agent_pkg
+-- Importing package spi_tlm_pkg
+-- Importing package apb_seq_pkg
+-- Loading package mtiUvm.questa_uvm_pkg
+-- Loading interface apb_if
+-- Loading interface clk_rst_if
+-- Loading interface spi_if
+-- Loading module spi_top
+-- Loading module spi_clgen
+-- Loading module spi_shift
+Incremental compilation check found no design-units have changed.
+viscom:
+VISCOM: QuestaSim /home/eda/siemens/questasim/questasim/linux_x86_64/VisualizerRls/bin/viscom 2021.2_1 at 2021.05 May 15 2021
+VISCOM: Writing design.bin
+VISCOM: Done writing design.bin
+
+Optimized design name is vopt_top
+End time: 14:43:16 on Nov 12,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
