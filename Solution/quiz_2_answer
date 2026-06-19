@@ -1,0 +1,13 @@
+What feature in a uvm_component is responsible for the order of testbench execution?
+
+Answer:
+Phasing is used to enable a testbench component to be executed in a predefined order during simulation. It enables proper synchronization among components.
+UVM invokes the phases through function/task calls. The basic phases are:
+  Build phase (top down, hierachially)
+  Connect phase (bottom up)
+  End of elaboration phase (bottom up)
+  Start of simulation phase (bottom up)
+  Run phase (parallel, consume time)
+  Check phase (bottom up)
+  Report phase (bottom up)
+

@@ -1,0 +1,7 @@
+There are two ways to invoke a test by calling run_test() in module top.
+Direct:
+  run_test("test_name");
+Use of command line argument:
+  run_test();
+  +UVM_TESTNAME=test_name
+

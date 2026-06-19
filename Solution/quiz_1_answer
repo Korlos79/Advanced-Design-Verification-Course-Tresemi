@@ -1,0 +1,13 @@
+In the lab trans.sv, what is the purpose of this macro
+`uvm_object_utils(packet)
+
+Answer:
+The macro is used to register the class type with the Factory which enables two main actions:
+1. Creation of an instance using packet::type_id::create
+2. Type (instance) override with an extending class
+Also with `uvm_object_utils_begin(packet), built-in methods such as do_copy can be used to operate on the class data elements
+  `uvm_object_utils_begin(packet)
+    `uvm_field_int(opcode,UVM_ALL_ON)
+    `uvm_field_int(id,UVM_ALL_ON)
+  `uvm_object_utils_end
+
