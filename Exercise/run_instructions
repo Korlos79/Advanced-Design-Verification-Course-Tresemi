@@ -1,0 +1,21 @@
+To run a simulation:
+====================
+source env.sh
+cd sim
+
+Siemens:
+========
+Compile:
+make compile_mux
+
+Simulate in command mode:
+make run test_name=mux_demo_test
+
+Cadence:
+========
+Compile:
+make compile_mux tool=Cadence
+
+Simulate in command mode:
+make run test_name=mux_demo_test tool=Cadence
+

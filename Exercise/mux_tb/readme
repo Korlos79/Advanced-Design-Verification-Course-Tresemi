@@ -1,0 +1,5 @@
+This TB is a copy of the lab_mux_tb with the following changes.
+1. Removal of the uvm_tb_ap_queue implementation
+2. The uvm_tb_ap_queue is replaced with uvm_analysis_fifo in sb.sv
+3. The uvm_tb_ap_queue is replaced with uvm_analysis_imp in cov.sv
+
